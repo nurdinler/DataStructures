@@ -35,7 +35,7 @@ node* count_em(node *r){ //SORULACAK
 */
 //sondan ekleme
 node* addto_end(node *r,int data){
-	node *iter; //listenin içinde gezmemizi saglayan pointer
+	node *iter; //listenin iÃ§inde gezmemizi saglayan pointer
 	node *temp; //listeye eklenecek dugum
 	temp=(node*)malloc(sizeof(node)); //eklenecek dugum olusturuldu
 	temp->data=data; // dugumun icine data eklendi
@@ -65,7 +65,7 @@ node* addto_end(node *r,int data){
 }
 //Bastan Ekleme
 node* addto_beg(node *r,int _data){
-	node *iter;	//listenin içinde gezmemizi saglayan pointer
+	node *iter;	//listenin iÃ§inde gezmemizi saglayan pointer
 	node *temp; //listeye eklenecek dugum
 	temp = (node*)malloc(sizeof(node)); //eklenecek dugum olusturuldu
 	temp->data =_data; // dugumun icine data eklendi
