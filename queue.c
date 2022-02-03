@@ -10,27 +10,19 @@ typedef struct QueueStruct{
 node *root=NULL;
 node *rear=NULL; //stores end of the queue
 
-void enqueue(int _data){
-	//printf("hey");
-	if(root==NULL){ //if queue is empty
-	//printf("hey1");
+void enqueue(int _data){	
+	if(root==NULL){ //if queue is empty	
 		root=(node*)malloc(sizeof(node));
 		root->data=_data;
 		rear=root;
 		rear->next=NULL;	
 		return;	
 	}
-	//printf("hey2");
 	node *temp=(node*)malloc(sizeof(node));
-	//printf("hey3");
 	temp->data=_data;
-	//printf("hey4");
 	rear->next=temp;
-	//printf("hey5");
 	temp->next=NULL;
-	//printf("hey6");
 	rear=temp;
-	//printf("hey7");
 }
 
 void dequeue(){
