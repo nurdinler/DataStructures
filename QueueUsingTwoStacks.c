@@ -25,12 +25,18 @@ void enqueue(){
     tail=tail->next;
 }
 void dequeue(){
+    if(head==NULL){//if queue is empty
+        return;
+    }
     node *temp;
     temp=head;
     head=head->next;
     free(temp);    
 }
 void printit(){//print the front element
+    if(head==NULL){//if queue is empty
+        return;
+    }
     printf("%d",head->data);
     printf("\n");
 }
